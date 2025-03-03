@@ -30,7 +30,6 @@ namespace ProiectMDS
             string carColor = AddCarColorTB.Text;
             string carYear = AddCarYearTB.Text;
 
-            // Check if car number is in correct format
             Regex pattern = new Regex(@"^[A-Z]{2} \d{2} [A-Z]{3}$");
             if (!pattern.IsMatch(carNumber))
             {
@@ -38,7 +37,6 @@ namespace ProiectMDS
                 return;
             }
 
-            // Check if car number already exists in the database
             using (SqlConnection con = new SqlConnection(@"Data Source=POL-LAPTOP\SQLEXPRESS;Initial Catalog=AppParcare;Integrated Security=True"))
             {
                 con.Open();
@@ -55,7 +53,6 @@ namespace ProiectMDS
                 }
             }
 
-            // Add new car to the database
             using (SqlConnection con = new SqlConnection(@"Data Source=POL-LAPTOP\SQLEXPRESS;Initial Catalog=AppParcare;Integrated Security=True"))
             {
                 con.Open();
@@ -70,7 +67,6 @@ namespace ProiectMDS
 
             MessageBox.Show("Your car was added!");
 
-            // Refresh the data grid view
             ((Form1)this.Owner).showcars();
 
             this.Close();
@@ -80,12 +76,6 @@ namespace ProiectMDS
         {
             this.Close();
         }
-        /*private void AddButton_Click(object sender, EventArgs e)
-        {
-            AddCarForm addCarForm = new AddCarForm();
-            addCarForm.Owner = this; // Set the owner of the AddCarForm instance to this Form1 instance
-            addCarForm.Show();
-        }*/
 
     }
 }

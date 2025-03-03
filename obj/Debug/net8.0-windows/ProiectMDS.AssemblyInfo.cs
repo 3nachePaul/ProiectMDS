@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProiectMDS")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cc4ff31cda81f798dde264e99c0004f07f009e58")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ce5a703baff91db84763367f91744265613644c2")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProiectMDS")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProiectMDS")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

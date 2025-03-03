@@ -4,7 +4,16 @@
     <Compile Update="AddCarForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="AddUsrForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="EditCarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Login.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
